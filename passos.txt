@@ -1,0 +1,70 @@
+CRIANDO A ESTRUTURA DO PROJETO:
+
+- npm create vite@latest
+- entrar na pasta / npm i / npm run dev
+
+
+DELETANDO ARQUIVOS DESNECESSÁRIOS DO PROJETO:
+ 
+ - Em src: Mantenha só o App.jsx e main.jsx
+
+
+
+>>> COMPONENTES
+
+Componentes do react são funções que retornam HTML e podem ser chamados por <> </>
+Extensão de componente: JSX (javascript + XML) e  no nosso caso TSX (typescript + XML)
+
+
+>>> PROPS
+
+Propriedades são informações que podemos passar para os Componentes
+
+
+>>>> ESTILIZAÇÃO
+
+CSS modules
+
+CSS:
+NomeDaFolhaDeEstilo.module.css
+
+No componente:
+import styles from './NomeDaFolhaDeEstilo.module.css';
+
+Para chamar:
+
+styles.nomeDaClasseDaFolhaDeEstilo
+
+
+.post+.post {
+    Isso pega apenas o post que tem um outro post antes dele
+}
+
+.post > header{
+    Irá pegar apenas a primeira header que estiver dentro de post, não pega demais e nem aninhadas
+}
+
+
+
+>>>> ITERAÇÃO NO REACT
+
+Sempre usar o map() para iterar e pegar o return
+
+
+>>>> STATE
+
+Padrão do useState:
+    const [action, setAction] = useState([
+       valorInitialAction
+       
+    ])
+
+Quando eu quero usar uma variável e quero que a cada vez que seu valor mude, o componente react que usa
+ela renderize novamente, eu crio essa variavel no contexto de um estado (useState)    
+
+
+ETAPAS: HTML > CSS > FUNCIONALIDADE
+
+
+No react nomes compostos de atributos de tag html são escritos no padrão camelCase (não há hífen no react)
+No react programamos de forma declarativa e não imperativa
